@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Cookbook · Fall &amp; Winter</title>
+<meta name="description" content="44 Instant Pot and oven recipes for fall and winter.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Cookbook">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- HOME -->
+<main id="home" class="view">
+  <div class="wrap">
+    <header class="mast">
+      <div>
+        <h1>Fall &amp; Winter</h1>
+        <p class="sub">44 Instant Pot recipes for cold nights</p>
+      </div>
+      <div class="mast-actions">
+        <button type="button" class="round" id="search-btn" aria-label="Search" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        </button>
+        <button type="button" class="round" id="settings-btn" aria-label="Settings and sharing">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="search" id="search-row" hidden>
+      <label class="field">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input type="search" id="q" placeholder="Recipes, ingredients, protein" aria-label="Search recipes" autocomplete="off" enterkeyhint="search">
+      </label>
+    </div>
+
+    <div class="seg" role="group" aria-label="Cooking time" id="time">
+      <button type="button" data-t="0" aria-pressed="true">Any time</button>
+      <button type="button" data-t="35" aria-pressed="false">≤ 35 min</button>
+      <button type="button" data-t="60" aria-pressed="false">≤ 1 hr</button>
+    </div>
+  </div>
+
+  <div id="home-body"></div>
+
+  <div class="wrap">
+    <details class="basics">
+      <summary><span>Instant Pot basics</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+      <ul id="basics"></ul>
+    </details>
+    <p class="foot">Times include coming up to pressure and release. Add 10–15 minutes for chopping.</p>
+  </div>
+</main>
+
+<!-- LIST (a category, or everything you both want to try) -->
+<section id="list" class="view" hidden></section>
+
+<!-- RECIPE -->
+<article id="recipe" class="view" hidden></article>
+
+<!-- SETTINGS -->
+<dialog id="settings" aria-labelledby="set-h">
+  <form method="dialog" class="sheet">
+    <div class="sheet-head">
+      <h2 id="set-h">Shared hearts</h2>
+      <button type="submit" class="round" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <p class="hint">Hearts show which recipes you want to try. Connect both phones to the same link and you'll each see the other's.</p>
+    <label class="lbl" for="me">Your name</label>
+    <input class="txt" id="me" type="text" autocomplete="given-name" placeholder="e.g. Tanner" maxlength="24">
+    <label class="lbl" for="sync">Sync link</label>
+    <input class="txt" id="sync" type="url" inputmode="url" placeholder="https://script.google.com/macros/s/…/exec" autocomplete="off" spellcheck="false">
+    <p class="hint small">Paste the web app link from the Cookbook Hearts script. Setup steps are in the <a href="https://github.com/teleokinetic/cookbook/tree/main/hearts-sync" target="_blank" rel="noopener">hearts-sync folder</a>.</p>
+    <p class="status" id="sync-status" aria-live="polite"></p>
+    <div class="sheet-actions">
+      <button type="button" class="btn ghost" id="sync-now">Sync now</button>
+      <button type="button" class="btn" id="save-set">Save</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="recipes.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
