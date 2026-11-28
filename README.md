@@ -1,6 +1,6 @@
 # Cookbook — Fall & Winter
 
-44 Instant Pot and oven recipes for cold nights: soups, Italian sausage,
+45 Instant Pot and oven recipes for cold nights: soups, Italian sausage,
 stews and bowls, curries, noodle soups, and roasted salads.
 
 **Open it:** <https://teleokinetic.github.io/cookbook/>

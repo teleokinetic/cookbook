@@ -185,6 +185,13 @@ const R = [
  steps:["In a large skillet, crisp the gnocchi in the oil over medium-high heat, 5–6 min, turning once, until golden. Set aside.","Brown the sausage 5–6 min. Add the shallot for 2 min, then garlic and sun-dried tomatoes for 1 min.","Add the broth and simmer 3 min, scraping up the browned bits.","Lower the heat and stir in the half-and-half, Parmesan, and spinach until the spinach wilts.","Return the gnocchi, toss, and top with basil."],
  tip:"If using skyr, take the pan off the heat first and whisk a little of the hot sauce into the skyr before stirring it in."},
 
+{id:"breakfast-skillet",cat:"sausage",name:"Italian sausage breakfast skillet",time:"35 min",protein:"Sausage + eggs",freeze:"Best fresh",
+ blurb:"Crispy potatoes, sausage, and peppers with jammy eggs, all in one pan. Serves 2.",
+ p:"Stovetop · 30 min",
+ ing:["2 Yukon Gold potatoes, in ½-inch cubes","2 tbsp olive oil","8 oz Italian sausage, casings removed","1 small yellow onion and 1 bell pepper, diced","2 garlic cloves, minced","½ tsp smoked paprika, ¾ tsp salt, and ¼ tsp black pepper","4 large eggs","½ cup shredded cheddar or mozzarella","1 tbsp chopped chives or parsley","Toast or warm tortillas, and hot sauce to serve"],
+ steps:["Microwave the potatoes, covered, with a splash of water for 5 min until just tender. Drain and pat dry.","Heat the oil in a large oven-safe skillet (cast iron is ideal) over medium-high. Add the potatoes in one layer with half the salt and let them brown before flipping, about 10 min total. Set aside.","Brown the sausage in the same pan, breaking it into crumbles, 5–6 min.","Add the onion and pepper and cook 4–5 min until soft. Stir in the garlic, paprika, the rest of the salt, and the pepper for 1 min.","Return the potatoes, stir, and lower the heat to medium-low. Make 4 wells and crack an egg into each.","Sprinkle the cheese over the top, cover, and cook about 5 min, until the whites are set and the yolks are still runny.","Finish with the herbs and a crack of pepper. Serve from the skillet with toast and hot sauce."],
+ tip:"Dice the potatoes, onion, and pepper the night before. Keep the potatoes covered in water in the fridge so they don't brown."},
+
 /* ---------- STEWS & BOWLS ---------- */
 {id:"turkey-chili",cat:"stew",name:"Turkey & white bean chili",time:"40 min",protein:"Turkey",freeze:"Yes",
  blurb:"A lighter green chili with lime and avocado.",

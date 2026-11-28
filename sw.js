@@ -1,5 +1,5 @@
 /* Cookbook — offline shell. Bump CACHE when shipping changes so phones pick up the new version. */
-const CACHE = 'cookbook-v1.0.0';
+const CACHE = 'cookbook-v1.0.1';
 const FONTS = 'cookbook-fonts';
 const SHELL = ['./', 'index.html', 'styles.css', 'app.js', 'recipes.js', 'manifest.webmanifest',
   'icons/icon-180.png', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/favicon-32.png'];
